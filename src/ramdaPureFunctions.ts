@@ -35,6 +35,5 @@ export const parseQs = compose(
   fromPairs,
   map(split("=")),
   split("&"),
-  tail,
   dropWhile(equals("?"))
 );
